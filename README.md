@@ -1,2 +1,2 @@
-# wcag-navigations
+# WCAG - navigations
 WCAG - accessible navigations
