@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WCAG - Navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul class="nav" role="menubar" aria-hidden="false">
+      <li role="menuitem"><a href="#">Home</a></li>
+      <li role="menuitem" aria-haspopup="true">
+        <a href="#">About</a>
+        <ul aria-hidden="true" role="menu" class="">
+          <li role="menuitem"><a href="#" tabindex="-1">The Company</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">The Team</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" aria-haspopup="true">
+        <a href="#">Services</a>
+        <ul aria-hidden="true" role="menu" class="">
+          <li role="menuitem"><a href="#" tabindex="-1">One Service</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Two Service</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Three Service</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Four</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" aria-haspopup="true">
+        <a href="#">Products</a>
+        <ul aria-hidden="true" role="menu">
+          <li role="menuitem"><a href="#" tabindex="-1">Apples</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Oranges</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Grapes</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Pears</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Strawberries</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" aria-haspopup="true">
+        <a href="#">Contact Us</a>
+        <ul aria-hidden="true" role="menu">
+          <li role="menuitem"><a href="#" tabindex="-1">Store Hours</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Directions</a></li>
+          <li role="menuitem"><a href="#" tabindex="-1">Staff Directory</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Phasellus quis est sed turpis sollicitudin venenatis sed eu odio.</p>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
